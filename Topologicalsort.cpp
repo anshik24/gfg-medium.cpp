@@ -4,6 +4,7 @@ class Solution
 	//Function to return list containing vertices in Topological order. 
 	vector<int> topoSort(int V, vector<int> adj[]) 
 	{
+		//using queue indegree 
 	    queue<int>q;
 	    vector<int>indegree(V, 0);
 	    for(int i=0;i<V;i++){
